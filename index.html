@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Event Management</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <div id="login-page">
+      <h1 class="page-title">Login</h1>
+      <form id="login-form">
+        <input type="email" id="email" placeholder="Email" required />
+        <input type="password" id="password" placeholder="Password" required />
+        <button type="submit">Login</button>
+      </form>
+    </div>
+    <div id="organizer-page" style="display:none;">
+      <div>
+        <h1>Organizer's Page</h1>
+      </div>
+      <div>
+        <form id="create-event-form">
+          <input type="text" id="event-name" placeholder="Event Name" required />
+          <input type="date" id="event-date" placeholder="Event Date" required />
+          <input type="text" id="event-description" placeholder="Event Description" required />
+          <button type="submit">Create Event</button>
+        </form>
+      </div>
+      <div>
+        <form id="search-event-form">
+          <input type="text" id="search-event-name" placeholder="Search Event Name" />
+          <button type="submit">Search Event</button>
+        </form>
+      </div>
+      <div id="events-container"></div>
+    </div>
+    <div id="user-page" style="display:none;">
+      <h1 class="page-title">User's Page</h1>
+      <form id="search-event-form">
+        <input type="text" id="search-event-name" placeholder="Search Event Name" />
+        <button type="submit">Search Event</button>
+      </form>
+      <div id="events-list"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
